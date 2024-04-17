@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(240, 84%, 56%);
+}
+
+.todo-item {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px 0 hsl(0, 0%, 80%), 0 6px 20px 0 hsl(0, 0%, 80%);
+    border-radius: 8px;
+}
+
+.todo-item h2 {
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: hsl(0, 1%, 20%);
+}
+
+.todo-item small {
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+    color: hsl(0, 1%, 50%);
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.remove-to-do {
+    display: block;
+    float: right;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    color: hsl(5, 20%, 45%);
+    text-decoration: none;
+    padding: 5px 5px 8px 12px;
+    border-radius: 50%;
+    transition: background 2s;
+    cursor: pointer;
+}
+.remove-to-do:hover {
+    background: hsl(5, 20%, 45%);
+    color: hsl(0, 0%, 100%);
+}
+
+.checked {
+    color: #727171 !important;
+    text-decoration: line-through;
+}
+
+.todo-item input {
+    margin: 0px 5px;
+}
+
+.empty {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
